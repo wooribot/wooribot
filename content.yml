@@ -14,6 +14,14 @@ hi:
       - 그래~
       - 반갑다.
 
+fortune:
+  - typing: true
+    text:
+      - {{name}}님, 오늘은 최고의 날입니다.
+      - {{name}}님, 돈욕심 부리지 마세요.
+      - {{name}}님, 오늘 욕은 하지마세요.
+      - {{name}}님, 사랑이 찾아옵니다.
+
 goodbye:
   - text: 바이~ {{name}}
     typing: true

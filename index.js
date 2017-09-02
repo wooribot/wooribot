@@ -49,7 +49,17 @@ module.exports = function(bp) {
       })
   })
 
-  // You can also pass a matcher object to better filter events
+  bp.hear({
+    type: /message|text/i,
+    text: /운세/i
+  }, (event, next) => {
+
+    event.reply('#fortune', {
+      // You can pass data to the UMM bloc!
+      name: `${event.user.first_name}`
+    })
+  })
+
   bp.hear({
     type: /message|text/i,
     text: /바이|빠이|ㅂㅂ|안녕히|굳바이/i
