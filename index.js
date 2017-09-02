@@ -20,27 +20,44 @@
 */
 
 module.exports = function(bp) {
-  // bp.rivescript.setUtf8(true)
+  bp.rivescript.setUtf8(true)
+
+  bp.hear(/GET_STARTED|안녕|하이|방가|헬로|hi/i, (event, next) => {
+
+    bp.db.kvs
+      .get(`users/id/${event.user.id}`)
+      .then(user => {
+        console.log('USER ', user)
+
+        var count = 0;
+        if(user) {
+          event.reply('#hi')
+          count = user.count + 1
+        } else {
+          event.reply('#welcome')
+          count = 1;
+        }
+
+        bp.db.kvs
+          .set(`users/id/${event.user.id}`, {
+            platform: event.platform,
+            user: event.user,
+            text: event.text,
+            count: count,
+            last_updated: new Date()
+          })
+      })
+  })
 
   // You can also pass a matcher object to better filter events
   bp.hear({
     type: /message|text/i,
-    text: /exit|bye|goodbye|quit|done|leave|stop/i
+    text: /바이|빠이|ㅂㅂ|안녕히|굳바이/i
   }, (event, next) => {
-    bp.convo.start(event, convo => {
-      const name = convo.get('name')
-      console.log('name', name)
+
+    event.reply('#goodbye', {
+      // You can pass data to the UMM bloc!
+      name: `${event.user.first_name}`
     })
   })
-
-  bp.hear({
-    type: /message|text/i,
-    text: /잘자/i
-  }, (event, next) => {
-    event.reply('#defaultResponse')
-  })
-
-
-
-
 }

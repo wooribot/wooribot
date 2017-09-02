@@ -8,7 +8,7 @@
 # accessToken: "" # MESSENGER_ACCESS_TOKEN
 # appSecret: "" # MESSENGER_APP_SECRET
 
-# verifyToken: "" # MESSENGER_VERIFY_TOKEN
+verifyToken: "wooribot.com" # MESSENGER_VERIFY_TOKEN
 
 # displayGetStarted: true
 # greetingMessage: ""
