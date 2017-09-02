@@ -27,8 +27,6 @@ module.exports = function(bp) {
     bp.db.kvs
       .get(`users/id/${event.user.id}`)
       .then(user => {
-        console.log('USER ', user)
-
         var count = 0;
         if(user) {
           event.reply('#hi')
