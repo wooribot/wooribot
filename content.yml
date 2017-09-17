@@ -7,17 +7,16 @@ welcome: # this is the #welcome bloc referenced in index.js
   - text: 가끔은 사람말을 못 알아 듣고 엉뚱한 말을 할 때도 있습니다- -
     typing: true
   - image: https://scontent-icn1-1.xx.fbcdn.net/v/t34.0-12/21624187_1772556006375538_1359303879_n.gif?fallback=1&oh=1ebf9c6a49f98380a707ea9e27cfca2a&oe=59C0C3AA
-  - text: 궁금한 점이 있으시면 채팅하듯이 질문해 주세요.  아래 버튼 중에 선택하셔도 됩니다.
-    quick_replies:
-      - <.QR_YES> Yes
-      - <.QR_NO> No
   - template_type: generic
     elements:
-      - title: 제목
-        image_url: https://scontent-icn1-1.xx.fbcdn.net/v/t34.0-12/21624187_1772556006375538_1359303879_n.gif?fallback=1&oh=1ebf9c6a49f98380a707ea9e27cfca2a&oe=59C0C3AA
+      - title: 궁금한 점이 있으시면 채팅하듯이 질문해 주세요.  아래 버튼 중에 선택하셔도 됩니다.
         buttons:
-          - <PICK_.01> 도전! 호흡식
-          - <PICK_.02> 추석 특별
+          - type: web_url
+            - url: https://transurfing.wixsite.com/breatharians
+            - title: 도전! 호흡식 홈피로~
+          - type: postback
+            title: 추석 특별-도전호흡식
+            payload: breatharians
 
 test:
   - template_type: generic
@@ -25,8 +24,19 @@ test:
       - title: 제목
         image_url: https://scontent-icn1-1.xx.fbcdn.net/v/t34.0-12/21624187_1772556006375538_1359303879_n.gif?fallback=1&oh=1ebf9c6a49f98380a707ea9e27cfca2a&oe=59C0C3AA
         buttons:
-          - <#fortune> 도전! 호흡식
-          - <fortune> 추석 특별
+          - type: web_url
+            - url: https://transurfing.wixsite.com/breatharians
+            - title: 도전! 호흡식 홈피로~
+          - type: postback
+            title: 추석 특별-도전호흡식
+            payload: breatharians
+
+breatharians:
+  - text: 사람을 먹는 종류에 따라 일반식가, 채식가, 비건채식가, 과일식가, 생식가, 수식(水食)가 등으로 분류한다면, 호흡식가란, 말 그대로 거의 호흡만 하고 살아가는 사람들입니다.
+    typing: true
+  - text: 기, 프라나 등으로 불리우는 생명력의 원천으로 음식(飮食)을 대신하는 사람들이며, 전세계에 수 백명 정도가 있다하며 그 수가 점점 늘어나고 있습니다만, 현재 세계에서 활발히 활동을 하는 호흡식가는 40~50 명 정도가 파악되고 있습니다.
+    typing: true
+
 fortune:
   - typing: true
     text:
