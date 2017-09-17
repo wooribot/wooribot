@@ -49,6 +49,17 @@ module.exports = function(bp) {
 
   bp.hear({
     type: /message|text/i,
+    text: /테스트/i
+  }, (event, next) => {
+
+    event.reply('#fortune', {
+      // You can pass data to the UMM bloc!
+      name: `${event.user.first_name}`
+    })
+  })
+
+  bp.hear({
+    type: /message|text/i,
     text: /운세/i
   }, (event, next) => {
 
