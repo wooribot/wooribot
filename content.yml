@@ -20,8 +20,15 @@ welcome: # this is the #welcome bloc referenced in index.js
 breatharianism:
   - text: 사람을 먹는 종류에 따라 일반식가, 채식가, 비건채식가, 과일식가, 생식가, 수식(水食)가 등으로 분류한다면, 호흡식가란, 말 그대로 거의 호흡만 하고 살아가는 사람들입니다.
     typing: true
-  - text: 기, 프라나 등으로 불리우는 생명력의 원천으로 음식(飮食)을 대신하는 사람들이며, 전세계에 수 백명 정도가 있다하며 그 수가 점점 늘어나고 있습니다만, 현재 세계에서 활발히 활동을 하는 호흡식가는 40~50 명 정도가 파악되고 있습니다.
-    typing: true
+  - template_type: button
+    text: 기, 프라나 등으로 불리우는 생명력의 원천으로 음식(飮食)을 대신하는 사람들이며, 전세계에 수 백명 정도가 있다하며 그 수가 점점 늘어나고 있습니다만, 현재 세계에서 활발히 활동을 하는 호흡식가는 40~50 명 정도가 파악되고 있습니다.
+    buttons:
+      - type: web_url
+        url: https://transurfing.wixsite.com/breatharians
+        title: 도전! 호흡식 홈피로~
+      - type: postback
+        title: 호흡식가?
+        payload: breatharian
 
 breatharian:
   - image: https://scontent-icn1-1.xx.fbcdn.net/v/t35.0-0/p480x480/21744920_1773589729605499_2048611090_o.jpg?oh=94e88211e1e0e799e3184404a49e7a44&oe=59C08090
