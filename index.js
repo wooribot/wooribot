@@ -29,7 +29,7 @@ module.exports = function(bp) {
       .then(user => {
         var count = 0;
         if(user) {
-          event.reply('#hi')
+          event.reply('#welcome')
           count = user.count + 1
         } else {
           event.reply('#welcome')

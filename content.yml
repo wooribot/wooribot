@@ -7,15 +7,6 @@ welcome: # this is the #welcome bloc referenced in index.js
   - text: 가끔은 사람말을 못 알아 듣고 엉뚱한 말을 할 때도 있습니다- -
     typing: true
   - image: https://scontent-icn1-1.xx.fbcdn.net/v/t34.0-12/21624187_1772556006375538_1359303879_n.gif?fallback=1&oh=1ebf9c6a49f98380a707ea9e27cfca2a&oe=59C0C3AA
-hi:
-  - typing: true
-    text: # Picks one randomly
-      - 안녕하세요. {{user.first_name}}님!. 인간 한계에의 도전, 무한한 가능성의 세계, 도전! 호흡식의 세계에 오신것을 환영합니다.
-  - text: 저의 주 역할은 일반적인 식습관을 넘어 유기농 채식, 비건 채식, 생식, 과일식, 쥬스식, 수(水)식과 물조차 안 먹는 호흡식에 이르는 과정의 정보 전달에 있습니다.
-    typing: 1s
-  - text: 가끔은 사람말을 못 알아 듣고 엉뚱한 말을 할 때도 있습니다- -
-    typing: true
-  - image: https://scontent-icn1-1.xx.fbcdn.net/v/t34.0-12/21624187_1772556006375538_1359303879_n.gif?fallback=1&oh=1ebf9c6a49f98380a707ea9e27cfca2a&oe=59C0C3AA
   - text: 궁금한 점이 있으시면 채팅하듯이 질문해 주세요.  아래 버튼 중에 선택하셔도 됩니다.
     quick_replies:
       - <.QR_YES> Yes
