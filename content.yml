@@ -51,6 +51,7 @@ breatharian:
 
 menu:
   - text: 궁금한 질문의 단어를 쓰시거나 아래에서 고르세요~
+    typing: true
   - template_type: button
     text: 아래, 세계의 호흡식가들 소개를 보셔도 되고, 다른 질문을 하셔도 됩니다.
     buttons:
