@@ -11,7 +11,22 @@ welcome: # this is the #welcome bloc referenced in index.js
     quick_replies:
       - <.QR_YES> Yes
       - <.QR_NO> No
+  - template_type: generic
+    elements:
+      - title: 제목
+        image_url: https://scontent-icn1-1.xx.fbcdn.net/v/t34.0-12/21624187_1772556006375538_1359303879_n.gif?fallback=1&oh=1ebf9c6a49f98380a707ea9e27cfca2a&oe=59C0C3AA
+        buttons:
+          - <PICK_.01> 도전! 호흡식
+          - <PICK_.02> 추석 특별
 
+test:
+  - template_type: generic
+    elements:
+      - title: 제목
+        image_url: https://scontent-icn1-1.xx.fbcdn.net/v/t34.0-12/21624187_1772556006375538_1359303879_n.gif?fallback=1&oh=1ebf9c6a49f98380a707ea9e27cfca2a&oe=59C0C3AA
+        buttons:
+          - <PICK_.01> 도전! 호흡식
+          - <PICK_.02> 추석 특별
 fortune:
   - typing: true
     text:
