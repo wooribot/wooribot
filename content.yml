@@ -7,8 +7,8 @@ welcome: # this is the #welcome bloc referenced in index.js
   - text: 가끔은 사람말을 못 알아 듣고 엉뚱한 말을 할 때도 있습니다- -
     typing: true
   - image: https://scontent-icn1-1.xx.fbcdn.net/v/t34.0-12/21624187_1772556006375538_1359303879_n.gif?fallback=1&oh=1ebf9c6a49f98380a707ea9e27cfca2a&oe=59C0C3AA
-  - text: 제목
-    typing: true
+  - template_type: button
+    text: 궁금한 점이 있으시면 채팅하듯이 질문해 주세요.  아래 버튼 중에 선택하셔도 됩니다.
     buttons:
       - type: web_url
         url: https://transurfing.wixsite.com/breatharians
@@ -16,6 +16,7 @@ welcome: # this is the #welcome bloc referenced in index.js
       - type: postback
         title: 추석 특별-도전호흡식
         payload: breatharians
+
 
 test:
   - text: 제목
