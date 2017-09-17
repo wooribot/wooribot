@@ -15,25 +15,39 @@ welcome: # this is the #welcome bloc referenced in index.js
         title: 도전! 호흡식 홈피로~
       - type: postback
         title: 추석 특별-도전호흡식
-        payload: breatharians
+        payload: breatharianism
 
-
-test:
-  - text: 제목
-    buttons:
-      - type: web_url
-        url: https://transurfing.wixsite.com/breatharians
-        title: 도전! 호흡식 홈피로~
-      - type: postback
-        title: 추석 특별-도전호흡식
-        payload: breatharians
-
-
-breatharians:
+breatharianism:
   - text: 사람을 먹는 종류에 따라 일반식가, 채식가, 비건채식가, 과일식가, 생식가, 수식(水食)가 등으로 분류한다면, 호흡식가란, 말 그대로 거의 호흡만 하고 살아가는 사람들입니다.
     typing: true
   - text: 기, 프라나 등으로 불리우는 생명력의 원천으로 음식(飮食)을 대신하는 사람들이며, 전세계에 수 백명 정도가 있다하며 그 수가 점점 늘어나고 있습니다만, 현재 세계에서 활발히 활동을 하는 호흡식가는 40~50 명 정도가 파악되고 있습니다.
     typing: true
+
+breatharian:
+  - image: https://scontent-icn1-1.xx.fbcdn.net/v/t35.0-0/p480x480/21744920_1773589729605499_2048611090_o.jpg?oh=94e88211e1e0e799e3184404a49e7a44&oe=59C08090
+  - text: 인류 역사상 극소수를 제외하고 사람이 몇 년간 아무것도 안먹고 안마시고 살아 있을 수 있다는 것은 불가능한 일이라고 여겨져 왔습니다.
+    typing: true
+  - text: 그러나, 전세계의 많은 사람들이 호흡식 프로그램에 도전하여 짧게는 몇 년에서 길게는 몇 십년 동안 성공적인 호흡식가로서의 삶을 살아내면서 그 가능성의 문들을 활짝 열었습니다.
+    typing: true
+  - text: 아래, 세계의 호흡식가들 소개를 보셔도 되고, 다른 질문을 하셔도 됩니다.
+    typing: true
+  - buttons:
+    - type: web_url
+      url: https://transurfing.wixsite.com/breatharians
+      title: 도전! 호흡식 홈피로~
+    - type: postback
+      title: 추석 특별-도전호흡식
+      payload: menu
+
+menu:
+  - text: 궁금한 질문의 단어를 쓰시거나 아래에서 고르세요~
+  - buttons:
+    - type: web_url
+      url: https://transurfing.wixsite.com/breatharians
+      title: 도전! 호흡식 홈피로~
+    - type: postback
+      title: 추석 특별-도전호흡식
+      payload: breatharian
 
 fortune:
   - typing: true
