@@ -51,19 +51,12 @@ module.exports = function(bp) {
     event.reply('#breatharianism')
   })
 
-  bp.hear('breatharians', (event, next) => {
-    event.reply('#breatharians')
+  bp.hear('breatharian', (event, next) => {
+    event.reply('#breatharian')
   })
 
-  bp.hear({
-    type: /message|text/i,
-    text: /테스트/i
-  }, (event, next) => {
-
-    event.reply('#test', {
-      // You can pass data to the UMM bloc!
-      name: `${event.user.first_name}`
-    })
+  bp.hear('menu', (event, next) => {
+    event.reply('#menu')
   })
 
   bp.hear({
