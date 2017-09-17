@@ -12,8 +12,8 @@ welcome: # this is the #welcome bloc referenced in index.js
       - title: 궁금한 점이 있으시면 채팅하듯이 질문해 주세요.  아래 버튼 중에 선택하셔도 됩니다.
         buttons:
           - type: web_url
-            - url: https://transurfing.wixsite.com/breatharians
-            - title: 도전! 호흡식 홈피로~
+            url: https://transurfing.wixsite.com/breatharians
+            title: 도전! 호흡식 홈피로~
           - type: postback
             title: 추석 특별-도전호흡식
             payload: breatharians
@@ -25,8 +25,8 @@ test:
         image_url: https://scontent-icn1-1.xx.fbcdn.net/v/t34.0-12/21624187_1772556006375538_1359303879_n.gif?fallback=1&oh=1ebf9c6a49f98380a707ea9e27cfca2a&oe=59C0C3AA
         buttons:
           - type: web_url
-            - url: https://transurfing.wixsite.com/breatharians
-            - title: 도전! 호흡식 홈피로~
+            url: https://transurfing.wixsite.com/breatharians
+            title: 도전! 호흡식 홈피로~
           - type: postback
             title: 추석 특별-도전호흡식
             payload: breatharians
