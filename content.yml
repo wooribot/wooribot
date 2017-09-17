@@ -31,23 +31,28 @@ breatharian:
     typing: true
   - text: 아래, 세계의 호흡식가들 소개를 보셔도 되고, 다른 질문을 하셔도 됩니다.
     typing: true
-  - buttons:
-    - type: web_url
-      url: https://transurfing.wixsite.com/breatharians
-      title: 도전! 호흡식 홈피로~
-    - type: postback
-      title: 추석 특별-도전호흡식
-      payload: menu
+  - template_type: button
+    text: 아래, 세계의 호흡식가들 소개를 보셔도 되고, 다른 질문을 하셔도 됩니다.
+    buttons:
+      - type: web_url
+        url: https://transurfing.wixsite.com/breatharians
+        title: 도전! 호흡식 홈피로~
+      - type: postback
+        title: 메뉴로
+        payload: menu
+
 
 menu:
   - text: 궁금한 질문의 단어를 쓰시거나 아래에서 고르세요~
-  - buttons:
-    - type: web_url
-      url: https://transurfing.wixsite.com/breatharians
-      title: 도전! 호흡식 홈피로~
-    - type: postback
-      title: 추석 특별-도전호흡식
-      payload: breatharian
+  - template_type: button
+    text: 아래, 세계의 호흡식가들 소개를 보셔도 되고, 다른 질문을 하셔도 됩니다.
+    buttons:
+      - type: web_url
+        url: https://transurfing.wixsite.com/breatharians
+        title: 도전! 호흡식 홈피로~
+      - type: postback
+        title: 메뉴로
+        payload: menu
 
 fortune:
   - typing: true
