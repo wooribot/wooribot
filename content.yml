@@ -7,29 +7,26 @@ welcome: # this is the #welcome bloc referenced in index.js
   - text: 가끔은 사람말을 못 알아 듣고 엉뚱한 말을 할 때도 있습니다- -
     typing: true
   - image: https://scontent-icn1-1.xx.fbcdn.net/v/t34.0-12/21624187_1772556006375538_1359303879_n.gif?fallback=1&oh=1ebf9c6a49f98380a707ea9e27cfca2a&oe=59C0C3AA
-  - template_type: generic
-    elements:
-      - title: 궁금한 점이 있으시면 채팅하듯이 질문해 주세요.  아래 버튼 중에 선택하셔도 됩니다.
-        buttons:
-          - type: web_url
-            url: https://transurfing.wixsite.com/breatharians
-            title: 도전! 호흡식 홈피로~
-          - type: postback
-            title: 추석 특별-도전호흡식
-            payload: breatharians
+  - text: 제목
+    typing: true
+    buttons:
+      - type: web_url
+        url: https://transurfing.wixsite.com/breatharians
+        title: 도전! 호흡식 홈피로~
+      - type: postback
+        title: 추석 특별-도전호흡식
+        payload: breatharians
 
 test:
-  - template_type: generic
-    elements:
-      - title: 제목
-        image_url: https://scontent-icn1-1.xx.fbcdn.net/v/t34.0-12/21624187_1772556006375538_1359303879_n.gif?fallback=1&oh=1ebf9c6a49f98380a707ea9e27cfca2a&oe=59C0C3AA
-        buttons:
-          - type: web_url
-            url: https://transurfing.wixsite.com/breatharians
-            title: 도전! 호흡식 홈피로~
-          - type: postback
-            title: 추석 특별-도전호흡식
-            payload: breatharians
+  - text: 제목
+    buttons:
+      - type: web_url
+        url: https://transurfing.wixsite.com/breatharians
+        title: 도전! 호흡식 홈피로~
+      - type: postback
+        title: 추석 특별-도전호흡식
+        payload: breatharians
+
 
 breatharians:
   - text: 사람을 먹는 종류에 따라 일반식가, 채식가, 비건채식가, 과일식가, 생식가, 수식(水食)가 등으로 분류한다면, 호흡식가란, 말 그대로 거의 호흡만 하고 살아가는 사람들입니다.

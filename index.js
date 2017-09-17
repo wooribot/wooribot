@@ -47,6 +47,10 @@ module.exports = function(bp) {
       })
   })
 
+  bp.hear('breatharians', (event, next) => {
+    event.reply('#breatharians')
+  })
+
   bp.hear({
     type: /message|text/i,
     text: /테스트/i
